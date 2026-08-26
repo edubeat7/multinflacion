@@ -9,8 +9,8 @@ const publicRoutes = {
   "/": ["public/index.html", "text/html; charset=utf-8"],
   "/styles.css": ["public/styles.css", "text/css; charset=utf-8"],
   "/app.js": ["public/app.js", "text/javascript; charset=utf-8"],
-  "/imagenes/logo-ucv.png": ["Imagenes/logo ucv.png", "image/png"],
-  "/imagenes/logo-faces.jfif": ["Imagenes/LogoFacesUCV.jfif", "image/jpeg"],
+  "/imagenes/logo-ucv.png": ["public/imagenes/logo-ucv.png", "image/png"],
+  "/imagenes/logo-faces.jfif": ["public/imagenes/logo-faces.jfif", "image/jpeg"],
 };
 
 const server = http.createServer((request, response) => {
