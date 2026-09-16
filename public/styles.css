@@ -524,6 +524,48 @@ h3 {
   transform: translate(3px, -3px);
 }
 
+.sponsor-note {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 18px;
+  margin-top: 24px;
+  padding: 22px;
+  align-items: center;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+}
+
+.sponsor-mark {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  color: white;
+  background: var(--wine);
+  border-radius: 50%;
+  font-family: var(--serif);
+  font-size: 1.65rem;
+}
+
+.sponsor-note p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.sponsor-note strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--wine);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 400;
+}
+
+.sponsor-note b {
+  color: var(--ink);
+}
+
 .objectives {
   background: var(--cream);
 }
@@ -612,6 +654,23 @@ h3 {
 
 .format-details p:last-child {
   margin-bottom: 0;
+}
+
+.format-details .eligibility-note {
+  position: relative;
+  margin: 24px 0;
+  padding: 18px 20px 18px 55px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.eligibility-note > span {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  color: var(--gold);
+  font-weight: 700;
 }
 
 .split-heading {
@@ -877,9 +936,35 @@ h3 {
   align-items: center;
 }
 
-.evaluation-layout > div:first-child > p:last-child {
+.evaluation-layout > div:first-child > p:not(.eyebrow) {
   max-width: 390px;
   color: var(--muted);
+}
+
+.jury-note {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 15px;
+  max-width: 440px;
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.jury-note > span {
+  color: var(--wine);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.jury-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.jury-note strong {
+  color: var(--ink);
 }
 
 .evaluation-wheel {
@@ -1477,6 +1562,17 @@ footer nav a {
   .inline-resource {
     grid-template-columns: 70px 1fr auto;
     gap: 10px;
+  }
+
+  .sponsor-note {
+    grid-template-columns: 42px 1fr;
+    padding: 18px;
+  }
+
+  .sponsor-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 1.35rem;
   }
 
   .objective-grid {
