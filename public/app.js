@@ -48,7 +48,7 @@ if (reducedMotion) {
   revealElements.forEach((element) => revealObserver.observe(element));
 }
 
-const openingDate = new Date("2026-10-05T00:00:00-04:00").getTime();
+const openingDate = new Date("2026-10-09T00:00:00-04:00").getTime();
 const daysElement = document.querySelector("#days");
 const hoursElement = document.querySelector("#hours");
 const minutesElement = document.querySelector("#minutes");
