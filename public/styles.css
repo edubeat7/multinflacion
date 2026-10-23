@@ -108,17 +108,24 @@ a {
 }
 
 .brand {
-  width: 175px;
+  width: 270px;
+  gap: 15px;
+  flex-shrink: 0;
   height: 78px;
   display: flex;
   align-items: center;
 }
 
 .brand img {
-  width: 100%;
+  width: 175px;
   max-height: 76px;
   object-fit: contain;
   mix-blend-mode: multiply;
+}
+
+.brand .banking-logo {
+  width: 80px;
+  height: auto;
 }
 
 #main-nav {
@@ -857,7 +864,7 @@ h3 {
 .timeline-track {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .timeline-track::before {
@@ -1501,7 +1508,16 @@ footer nav a {
   }
 
   .brand {
+    width: 220px;
+    gap: 10px;
+  }
+
+  .brand img {
     width: 145px;
+  }
+
+  .brand .banking-logo {
+    width: 65px;
   }
 
   h1 {
